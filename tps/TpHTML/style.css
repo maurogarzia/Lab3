@@ -1,0 +1,23 @@
+.negrita{
+    font-weight: bold;
+}
+.subrayado{
+    text-decoration: underline;
+}
+.cursiva{
+    font-style: italic;
+}
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 1px solid black;
+    padding: auto;
+    text-align: center;
+}
+body{
+    background-color: antiquewhite;
+
+}
