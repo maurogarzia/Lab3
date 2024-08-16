@@ -1,0 +1,177 @@
+
+body{
+    background-color: gainsboro;
+    display: flex; flex-direction: column; gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color:lightblue; 
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    section{
+        padding: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+p{
+    font-family: Arial;
+}
+
+.superpuesto{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0px 6px;
+    border: solid white;
+    padding-bottom: 20px;
+    
+}
+
+.tp {
+    font: size 1rem;;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: dotted;
+    color: #fff;
+
+
+}
+
+.cuatro-uno {
+    background-color: #333;
+    font-size: 20px;
+    border: solid;
+    border-radius: 5px;
+}
+
+hr{
+    border: solid 1px;
+}
+
+.parrafo{
+    font-size: 11px;
+    font-family: Arial;
+    text-align: left;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+
+
+.cita{
+    background-color: gainsboro;
+    padding: 5px;
+    border-left: grey solid 4px;
+    font-size: 12px;
+    font-family: Arial;
+    font-style: italic;
+    margin: 0;
+    text-align: left;
+
+}
+
+.caja1{
+    border: 2px solid ;
+    border-radius: 6px;
+    font-size: 11px;
+    box-shadow: 3px 3px 20px gray;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.caja2{
+    border: black solid 3px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 20px gray;
+    padding-left: 10px;
+    font-size: 11px;
+    background-color:blanchedalmond;
+}
+
+.c1{
+    background-color:powderblue;
+    padding: 4px;
+    border-radius: 6px;
+    font-size: 10px;
+    position: relative;
+    top: 3px;
+    left: 0px;
+    padding: 3px;
+}
+
+.c2{
+    color: #fff;
+    padding: 2px;
+    border-radius: 6px;
+    background-color:darkcyan;
+    font-size: 10px;
+    position: absolute;
+    top: 605px;
+    left: 485px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 6px;
+}
+
+.grid-item{
+    color: #fff;
+    background-color: rgba(124, 93, 236, 0.824);
+    border: 1px solid rgba(124, 93, 236, 0.824);
+    padding: 3px;
+    border-radius: 6px;
+    font-size: smaller;
+    text-align: center;
+}
+
+.animacion{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 0.4s;
+    
+}
+
+.animacion:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+
+
+.mover{
+    border-radius: 100%;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 4px;
+    animation: mover 1s linear infinite;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(100px);
+    }
+
+}
+
+
