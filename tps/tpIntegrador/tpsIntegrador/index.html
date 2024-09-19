@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+        <div class="total_container">
+          <div class="header_container">
+
+            <div class="search">
+              <input type="text" placeholder="Ingrese un Elemento" id="inputSearch">
+              <button class="search_button" id="buttonSearch">
+                Buscar
+                <span class="material-symbols-outlined">
+                  search
+                  </span>
+              </button>
+            </div>
+
+            <div class="add_element">
+              <button class="add_element_button" id="addElement">
+                Agregar Elemento
+                <span class="material-symbols-outlined">
+                  library_add
+                  </span>
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+    </header>
+
+
+    <main>
+
+    <!-- Main -->
+
+    <!-- Formulario para agregar productos -->
+      <div class="form_Add_Element" id="formAddProduct">
+        <h2>Agregar o modificar un producto</h2>
+        <form action="" class="form_Add">
+          <input type="text" name="" id="nameProduct" placeholder="Ingrese un nombre"><br>
+          <input type="text" name="" id="pictureProduct" placeholder="Ingrese una imagen"><br>
+          <input type="number" name="" id="priceProduct" placeholder="0"><br>
+          <select name="" id="categoryProduct">
+              <option value="">Seleccione una categoria</option>
+              <option value="Gaseosas">Gaseosas</option>
+              <option value="Papas">Papas</option>
+              <option value="Hamburguesas">Hamburguesas</option>    
+          </select>
+        </form>
+        <button class="button_Cancelar" id="cancelar">Cancelar</button>
+        <button class="button_Aceptar" id="aceptar">Aceptar</button>
+        <button class="button_Delete" id="eliminar">Eliminar</button>
+      </div>
+
+      <div class="container__view" >
+        <div class="list">
+          <aside class="list__Asside">
+            <h2 >
+              Categorias
+              <span class="material-symbols-outlined">
+                filter_list
+                </span>
+            </h2>
+            <ul id="list_filter">
+              <li id="todos">Todos los productos</li>
+              <li id ="hamburguesas">Hamburguesas</li>
+              <li id ="papas">Papas</li>
+              <li id ="gaseosas">Gaseosas</li>
+              <li id ="menorPrecio">Menor Precio</li>
+              <li id ="mayorPrecio">Mayor Precio</li>
+            </ul>
+          </aside>
+          
+        </div>
+        <div class="store" id="viewStore">
+
+        </div>
+      </div>    
+        
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
+

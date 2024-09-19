@@ -1,0 +1,239 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+html{
+  min-height: 100vh;
+ 
+  width: 100vw;
+}
+
+/*---------------- Header ----------------- */
+
+.total_container {
+  background-color: #1e3f72;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+}
+
+.header_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search{
+  display: flex;
+  justify-content: space-around;
+  gap: 1vh;
+}
+
+.search input {
+  border-radius: 5px;
+  border: none;
+  padding: 3px;
+  outline: none;
+  width: 20vh;
+}
+
+.search_button{
+  border-radius: 5px;
+  width: 150px;
+  text-align: left;
+  color: white;
+  background-color: transparent;
+  border: white 1px solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.search_button:hover{
+  cursor: pointer;
+  background-color: white;
+  transition: 0.5s;
+  color: #1e3f72;
+}
+
+.add_element{
+  position: absolute;
+  left: 78%;
+}
+
+.add_element_button{
+  border-radius: 5px;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  border: white solid 1px;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add_element_button:hover{
+  cursor: pointer;
+  background-color: white;
+  transition: 0.5s;
+  color: #1e3f72;
+}
+
+/* -----------------main----------------- */
+
+/* ---Formulario de ingreso de Producto--- */
+
+.form_Add_Element{
+  position:absolute;
+  z-index: 2;
+  left: 45%;
+  top: 30%;
+  background-color: aliceblue;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 5px 5px 20px;
+  border: solid 1px;
+  display: none;
+}
+
+
+.form_Add_Element h2{
+  padding: 10px;
+}
+
+.form_Add{
+  padding: 10px;
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+.form_Add input{
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+
+.form_Add option{
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.button_Cancelar{
+  background-color: yellow;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+  margin-left:10px ;
+  border: none;
+}
+
+.button_Aceptar{
+  position: relative;
+  left: 255px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.button_Delete{
+  position: relative;
+  left: 30px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---Vista general--- */
+
+.container__view{
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  
+}
+
+/* ---Categorias--- */
+
+.list{
+  background-color: aliceblue;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.list h2{
+  padding: 5px;
+}
+
+.list li{
+  padding: 5px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+
+/* Para darle estilo cuando hagan click en alguna categoria */
+.clickCategory{
+  background-color:#1e3f72;
+  border-radius: 5px;
+  color: white;
+  transition: 0.2s;
+  padding: 3px;
+
+}
+/*--Store-- */
+.store{
+  background-color: gainsboro;
+  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5vh;
+}
+
+.object__element{
+  padding: 5px;
+  border-radius: 20px;
+  background-color: gray;
+  color: white;
+  width: 30vw;
+  text-align: center;
+  position: relative;
+  left: 40%;
+  box-shadow: 5px 5px 20px black;
+  height: 47vh;
+}
+
+.object__element img{
+  width: 20vw;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+/* Media querys */
+
+@media screen and (max-width: 768px) {
+  
+  .object__element {
+    width: 50vw;
+    left: 10%;
+  }
+
+  .object__element img{
+    width: 30vw;
+  }
+
+  .store {
+    gap: 3vh;
+  }
+}
